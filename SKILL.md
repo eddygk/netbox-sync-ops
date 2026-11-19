@@ -1,5 +1,6 @@
 ---
 name: netbox-sync-ops
+version: 1.0.2
 description: >-
   Infrastructure inventory automation and utility/integration operations for
   netbox-proxmox-sync, an idempotent state sync that models Proxmox VE and UniFi
@@ -11,8 +12,35 @@ description: >-
   touch production systems. Source and full docs live at
   https://github.com/eddygk/netbox-proxmox-sync.
 metadata:
-  version: "1.0.2"
-  openclaw: "{\"homepage\":\"https://github.com/eddygk/netbox-proxmox-sync\",\"os\":[\"linux\"],\"requires\":{\"bins\":[\"python3\"],\"env\":[\"NETBOX_URL\",\"NETBOX_TOKEN\",\"PROXMOX_HOST\",\"PROXMOX_TOKEN_ID\",\"PROXMOX_TOKEN_SECRET\"]},\"envVars\":[{\"name\":\"NETBOX_URL\",\"required\":true,\"description\":\"NetBox API base URL.\"},{\"name\":\"NETBOX_TOKEN\",\"required\":true,\"description\":\"NetBox API token.\"},{\"name\":\"PROXMOX_HOST\",\"required\":true,\"description\":\"Proxmox API URL.\"},{\"name\":\"PROXMOX_TOKEN_ID\",\"required\":true,\"description\":\"Proxmox API token identifier.\"},{\"name\":\"PROXMOX_TOKEN_SECRET\",\"required\":true,\"description\":\"Proxmox API token secret.\"}]}"
+  openclaw:
+    homepage: https://github.com/eddygk/netbox-proxmox-sync
+    os:
+      - linux
+    requires:
+      bins:
+        - python3
+      env:
+        - NETBOX_URL
+        - NETBOX_TOKEN
+        - PROXMOX_HOST
+        - PROXMOX_TOKEN_ID
+        - PROXMOX_TOKEN_SECRET
+    envVars:
+      - name: NETBOX_URL
+        required: true
+        description: NetBox API base URL.
+      - name: NETBOX_TOKEN
+        required: true
+        description: NetBox API token.
+      - name: PROXMOX_HOST
+        required: true
+        description: Proxmox API URL.
+      - name: PROXMOX_TOKEN_ID
+        required: true
+        description: Proxmox API token identifier.
+      - name: PROXMOX_TOKEN_SECRET
+        required: true
+        description: Proxmox API token secret.
 ---
 
 # NetBox Sync Ops
